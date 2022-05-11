@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-bright-yellow: hsl(71, 73%, 54%);
+  --neutral-light-gray: hsl(204, 43%, 93%);
+  --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Karla', sans-serif;
+  background: var(--neutral-light-gray);
+  padding: 3rem;
+}
+
+main {
+  margin: auto;
+  max-width: 64rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/*=============JOIN OUR COMMUNITY BOX=============*/
+
+#community {
+  background: white;
+  padding: 3rem;
+}
+
+#community h3 {
+  color: var(--primary-cyan);
+}
+
+#community h4 {
+  color: var(--primary-bright-yellow);
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#community p {
+  color: var(--neutral-grayish-blue);
+  line-height: 3rem;
+}
+
+/*=============MONTHLY SUBSCRIPTION BOX=============*/
+
+#subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--primary-cyan);
+  padding: 3rem;
+}
+
+#subscription h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+#subscription span {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+#subscription p {
+  color: white;
+  opacity: 0.8;
+}
+
+.display-subscription {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+#subscription .display-subscription p {
+  opacity: 0.5;
+}
+
+#subscription button {
+  background: var(--primary-cyan);
+  border: none;
+  padding: 1.7rem;
+  margin-top: 3rem;
+  color: white;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--primary-bright-yellow);
+  font-size: 1.6rem;
+  font-weight: 700;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/*=============WHY-USB BOX=============*/
+#why-us {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--primary-cyan);
+  opacity: 0.7;
+}
+
+#why-us h3 {
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+#why-us ul li {
+  color: white;
+  opacity: 0.8;
+  list-style-type: none;
+  line-height: 2.2rem;
+}
+
+/*=============FOOTER BOX=============*/
+
+footer {
+  padding: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/*=============RESPONSIVE=============*/
+
+@media (min-width: 40rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 48rem;
+  }
+
+  #community {
+    grid-column: 1/3;
+  }
+}
